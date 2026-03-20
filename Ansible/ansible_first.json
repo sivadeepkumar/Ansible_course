@@ -1,0 +1,23 @@
+{
+    "students" : [
+        {   "studentName" : "Aryan",
+            "DOB" : "25-02-1998",
+            "email" : "sivadeepkumar3@gmai.com",
+            "Address" : [
+                {   
+                    "type" : "premanent",
+                    "flatNo" : 40,
+                    "colony" : "janes",
+                    "roomNo" : 101
+                },
+                {   
+                    "type" : "current",
+                    "flatNo" : 40,
+                    "colony" : "janes",
+                    "roomNo" : 101
+                }
+            ]
+        
+        }
+    ]
+}

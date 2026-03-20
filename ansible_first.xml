@@ -1,0 +1,19 @@
+
+<!-- Student Details -->
+<Students>
+</Students>
+<student>
+    <FirstName>Jyothi</FirstName>
+    <DOB>25-02-1998</DOB>
+    <Email>sivadeepkumar3@gmail.com</Email>
+    <Address>
+        <PremAddress>
+            <FlatNo> 18-9/2 </FlatNo>
+        </PremAddress>
+        <CurrentAddress>
+            <FlatNo> sector-50,C-74 </FlatNo>
+        </CurrentAddress>
+    </Address>
+
+
+</student>
