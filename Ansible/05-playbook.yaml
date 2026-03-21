@@ -1,0 +1,14 @@
+- name : OverWrite
+  hosts: local
+  connection: local
+  vars:
+    Course: "Ansible Course"
+    Name: "Siva"
+    Duration: "140hr"
+
+  tasks: 
+    - name: print something
+      vars: 
+      Course: "Devops Course"
+      ansible.builtin.debug:
+        "I love to Learn {{Course}} from {{Name}} accepted challenge {{Duration}}"
