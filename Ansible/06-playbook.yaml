@@ -1,10 +1,8 @@
 - name : OverWrite
   hosts: local
   connection: local
-  vars:
-    Course: "Ansible Course"
-    Name: "Siva"
-    Duration: "140hr"
+  vars_files:
+  - vars.yaml
 
   tasks: 
     - name: print something
