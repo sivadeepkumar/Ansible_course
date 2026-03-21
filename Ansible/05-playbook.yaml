@@ -9,6 +9,6 @@
   tasks: 
     - name: print something
       vars: 
-      Course: "Devops Course"
+        Course: "Devops Course"
       ansible.builtin.debug:
         "I love to Learn {{Course}} from {{Name}} accepted challenge {{Duration}}"
