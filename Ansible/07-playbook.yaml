@@ -1,0 +1,20 @@
+- name: Which Version of nginx do you want to install
+  hosts: local
+  connection: local
+  vars_prompt:
+    - name: Version
+      prompt: Enter version number
+      private: false
+    
+    - name: Username
+      prompt: Enter Us__name
+      private: true
+
+    - name: Password
+      prompt: Enter passwo__
+      private: true
+
+  tasks:
+  - name: print vars from prompt
+    ansible.builtin.debug:
+      msg: "{{ Username }} with {{ Password }}"
