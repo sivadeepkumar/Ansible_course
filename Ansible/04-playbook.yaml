@@ -1,0 +1,11 @@
+- name : local connection
+  hosts: local
+  connection: local
+  vars:
+    Course: "Ansible Course"
+    Name: "Siva"
+    Duration: "140hr"
+  tasks: 
+  - name: ping local
+    ansible.builtin.debug:
+      msg: "I love to Learn {{Course}} from {{Name}} accepted challenge {{Duration}}"
