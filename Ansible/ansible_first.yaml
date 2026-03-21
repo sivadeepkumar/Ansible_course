@@ -1,0 +1,14 @@
+- name: "siva deep kumar"
+  age: 28
+  phoneNumer: 9490503569
+  gender: Male
+  address :
+  - type: current
+    flatNumber: 45
+    street:  "Ganga Devi Nagar"
+    city: Indore
+  
+  - type: permanent
+    flatNumber: "18-9/2"
+    street:  "Bank Street Ganesh chowk"
+    city: Attili
