@@ -1,0 +1,10 @@
+- name : OverWrite
+  hosts: local
+  connection: local
+
+  tasks: 
+    - name: print something
+      vars: 
+        Course: "Devops Course"
+      ansible.builtin.debug:
+        msg: "I love to Learn {{Course}}"
