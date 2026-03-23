@@ -8,16 +8,16 @@
 
   - name: Find is server RedHat or not
     ansible.builtin.debug:
-      msg: " Yes, it is RedHat server"
-      when: ansible_facts.os_family == "RedHat"
+      msg: "Yes, it is RedHat server"
+    when: ansible_facts.os_family == "RedHat"
 
   - name: Find is server Ubuntu or not
     ansible.builtin.debug:
-      msg: " Yes, it is Ubuntu server"
-      when: ansible_facts.os_family == "Ubuntu"
+      msg: "Yes, it is Ubuntu server"
+    when: ansible_facts.os_family == "Ubuntu"
   
   - name: Find is server Debian or not
     ansible.builtin.debug:
       msg: " Yes, it is Debian server"
-      when: ansible_facts.os_family == "Debian"
+    when: ansible_facts.os_family == "Debian"
   
