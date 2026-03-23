@@ -1,26 +1,28 @@
 - name: data types
-  hosts: local
+  hosts: localhost
   connection: local
+
   vars: 
-    ProgrammingLanguage: "Python" # string data type 
-    Version:3.10 # integer data type 
-    is_active: true # boolean data type 
-    Price: 1000.00 # float data type 
-    Skills: # list data type 
-    - "Python"
-    - "JavaScript"
-    Address: # map/dictionary data type 
+    ProgrammingLanguage: "Python"   # string
+    Version: 3                  # number
+    is_active: true               # boolean
+    Price: 1000.00                # float
+    Skills:                       # list
+      - "Python"
+      - "JavaScript"
+    Address:                      # dictionary
       FlatNo: 101
       Street: "123 Main St"
       City: "New York"
       State: "NY"
+
   tasks:
     - name: print data types
       ansible.builtin.debug:
         msg: |
-        Program : {{ ProgrammingLanguage }}
-        Version : {{ Version }}
-        is_active : {{ is_active }}
-        Price : {{ Price }}
-        Skills : {{ Skills }}
-        Address : {{ Address }}
+          Program : {{ ProgrammingLanguage }}
+          Version : {{ Version }}
+          is_active : {{ is_active }}
+          Price : {{ Price }}
+          Skills : {{ Skills }}
+          Address : {{ Address }}
