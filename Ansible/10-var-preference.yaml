@@ -6,7 +6,7 @@
   vars_files:
   - vars.yaml
   vars_prompt:
-  - ame: Name
+  - name: Name
     prompt: Enter your name
     private: false
   tasks:
