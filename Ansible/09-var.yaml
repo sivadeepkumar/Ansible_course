@@ -5,3 +5,6 @@
   - name: print variables from args
     ansible.builtin.debug:
       msg: "Hello {{ Name }} and {{ Age }}"
+
+      # How to run the playbook with arguments
+      # ansible-playbook -i Inventory.ini 09-var.yaml -e "Name=Siva Age=28"
