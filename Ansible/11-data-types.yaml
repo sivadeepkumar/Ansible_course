@@ -18,9 +18,9 @@
     - name: print data types
       ansible.builtin.debug:
         msg: |
-        Program : {{ ProgrammingLanguage }}
-        Version : {{ Version }}
-        is_active : {{ is_active }}
-        Price : {{ Price }}
-        Skills : {{ Skills }}
-        Address : {{ Address }}
+          Program : {{ ProgrammingLanguage }}
+          Version : {{ Version }}
+          is_active : {{ is_active }}
+          Price : {{ Price }}
+          Skills : {{ Skills }}
+          Address : {{ Address }}
