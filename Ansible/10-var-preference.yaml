@@ -15,3 +15,19 @@
       Name: Ansible from task 
     ansible.builtin.debug:
       msg: "Hi {{ Name }}"
+
+      # ansible-playbook -i Inventory.ini -e 'Name="Ansible from args"' 10-var-preference.yaml 
+      # First Preference is from args
+      # Second Preference is from task
+      # Third Preference is from variables files
+      # Fourth Preference is from prompt
+      # Fifth Preference is from playbook
+      # Sixth Preference is from inventory
+
+
+      # 1 args 
+      # 2 task
+      # 3 variables files
+      # 4 prompt
+      # 5 playbook
+      # 6 inventory
