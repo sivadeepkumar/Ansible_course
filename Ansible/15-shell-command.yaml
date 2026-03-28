@@ -9,3 +9,11 @@
   - name: print command o/p 
     ansible.builtin.debug:
       msg: "{{ command_output }}"
+
+  - name: print shell command output 
+    ansible.builtin.shell: ls -ltr > files.txt 
+    register: shell_output
+
+  - name: print shell command output file content 
+    ansible.builtin.debug: 
+      msg: "{{ shell_output }}"
