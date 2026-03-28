@@ -3,6 +3,6 @@
   connection: local 
   tasks:
   - name: print command o/p
-    ansible.builtin.command: cat /etc/passwd | grep root
+    ansible.builtin.shell: cat /etc/passwd | grep root
     register: command_output
-    
+
